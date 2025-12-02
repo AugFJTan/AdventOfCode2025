@@ -15,10 +15,10 @@ int main() {
 		int delta = sign * std::stoi(data.substr(1));
 
 		value += delta;
-		value = value % 100;
+		value %= 100;
 
 		if (value < 0)
-			value = 100 + value;
+			value += 100;
 
 		if (value == 0)
 			counter++;
