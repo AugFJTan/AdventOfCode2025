@@ -19,8 +19,7 @@ int main() {
 		for (int i = 0; i < data.length() - 1; i++) {
 			for (int j = i + 1; j < data.length(); j++) {
 				int value = buffer[i] * 10 + buffer[j];
-				if (value > highest)
-					highest = value;
+				highest = std::max(value, highest);
 			}
 		}
 
