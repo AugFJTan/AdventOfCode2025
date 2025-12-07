@@ -32,7 +32,7 @@ int main() {
 	}
 
 	for (std::pair<uint64_t, uint64_t> range : ranges) {
-		for (uint64_t j = range.first; j < range.second; j++) {
+		for (uint64_t j = range.first; j <= range.second; j++) {
 			std::string number = std::to_string(j);
 			if (number.length() % 2 == 1)
 				continue;
